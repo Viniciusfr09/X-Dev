@@ -1,4 +1,51 @@
-body{
+body {
     font-family: 'Outfit', sans-serif;
+    background-image: url('../Imagens/fundo-base.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
 
+.cabecalho {
+    text-align: center;
+    padding: 60px 0;
+}
+.cabecalho h1{
+    color: #f1ecff;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.personagens-slider{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.lista-personagens{
+    background-color: red;
+    width: 330px;
+    height: 520px;
+}
+.btn-seta{
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0,2s ease-in-out;
+    
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover{
+    background: #8351fe;
 }
